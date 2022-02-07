@@ -28,7 +28,7 @@ public class HelloWorldResource {
                 "\n" +
                 "<HEAD>\n" +
                 "\n" +
-                "<TITLE>Your Title Here</TITLE>\n" +
+                "<TITLE>Mythis Game</TITLE>\n" +
                 "\n" +
                 "</HEAD>\n" +
                 "\n" +
@@ -38,7 +38,7 @@ public class HelloWorldResource {
                 "\n" +
                 "<HR>\n" +
                 "\n" +
-                "<a href=\"https://williamharris.dev/\">Link Name</a>\n" +
+                "<a href=\"https://williamharris.dev/\">My Website!!</a>\n" +
                 "\n" +
                 "is a link to another nifty site\n" +
                 "\n" +
@@ -48,7 +48,7 @@ public class HelloWorldResource {
                 "\n" +
                 "Send me mail at <a href=\"mailto:support@yourcompany.com\">\n" +
                 "\n" +
-                "support@yourcompany.com</a>.\n" +
+                "wharris1597@gmail.com</a>.\n" +
                 "\n" + "<P> </B>" +
                 newPlayerInfo +
                 "\n" +
