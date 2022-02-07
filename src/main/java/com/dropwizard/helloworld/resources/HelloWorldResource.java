@@ -20,11 +20,48 @@ import com.dropwizard.helloworld.resources.HelloWorldResource;
 @Path ("hello")
 public class HelloWorldResource {
     @GET
-    @Produces (MediaType.TEXT_PLAIN)
+    @Produces (MediaType.TEXT_HTML)
     public String getGreeting () {
         Player newPlayer = Player.getPlayerInstance();
         String newPlayerInfo = newPlayer.toString();
-        return newPlayerInfo;
+        String HTML = "<HTML>\n" +
+                "\n" +
+                "<HEAD>\n" +
+                "\n" +
+                "<TITLE>Your Title Here</TITLE>\n" +
+                "\n" +
+                "</HEAD>\n" +
+                "\n" +
+                "<BODY BGCOLOR=\"FFFFFF\">\n" +
+                "\n" +
+                "<CENTER><IMG SRC=\"clouds.jpg\" ALIGN=\"BOTTOM\"> </CENTER>\n" +
+                "\n" +
+                "<HR>\n" +
+                "\n" +
+                "<a href=\"https://williamharris.dev/\">Link Name</a>\n" +
+                "\n" +
+                "is a link to another nifty site\n" +
+                "\n" +
+                "<H1>Mythis Game</H1>\n" +
+                "\n" +
+                "<H2>New Player Info</H2>\n" +
+                "\n" +
+                "Send me mail at <a href=\"mailto:support@yourcompany.com\">\n" +
+                "\n" +
+                "support@yourcompany.com</a>.\n" +
+                "\n" + "<P> </B>" +
+                newPlayerInfo +
+                "\n" +
+                "<P> <B>Above are your player's stats.</B>\n" +
+                "\n" +
+                "<BR> <B><I>These reset after each page load.</I></B>\n" +
+                "\n" +
+                "<HR>\n" +
+                "\n" +
+                "</BODY>\n" +
+                "\n" +
+                "</HTML>";
+        return HTML;
 
     }
 

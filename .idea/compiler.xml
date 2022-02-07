@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MythisWebGame" />
+        <module name="helloworld" />
+        <module name="MythisWebApplication" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MythisWebGame" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
