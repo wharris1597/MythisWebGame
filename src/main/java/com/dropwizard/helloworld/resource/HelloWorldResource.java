@@ -2,15 +2,16 @@
 /**
  *
  */
-package com.dropwizard.helloworld.resources;
+package com.dropwizard.helloworld.resource;
+
+import com.dropwizard.helloworld.Player;
+
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
-import com.dropwizard.helloworld.Player;
-import com.dropwizard.helloworld.resources.HelloWorldResource;
-
+import java.net.URL;
 
 
 /**
@@ -24,6 +25,10 @@ public class HelloWorldResource {
     public String getGreeting () {
         Player newPlayer = Player.getPlayerInstance();
         String newPlayerInfo = newPlayer.toString();
+
+
+
+
         String HTML = "<HTML>\n" +
                 "\n" +
                 "<HEAD>\n" +
@@ -34,7 +39,7 @@ public class HelloWorldResource {
                 "\n" +
                 "<BODY BGCOLOR=\"FFFFFF\">\n" +
                 "\n" +
-                "<CENTER><IMG SRC=\"clouds.jpg\" ALIGN=\"BOTTOM\"> </CENTER>\n" +
+                "<CENTER><IMG SRC=\"https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg\" ALIGN=\"TOP\"> </CENTER>\n" +
                 "\n" +
                 "<HR>\n" +
                 "\n" +
@@ -46,7 +51,7 @@ public class HelloWorldResource {
                 "\n" +
                 "<H2>New Player Info</H2>\n" +
                 "\n" +
-                "Send me mail at <a href=\"mailto:support@yourcompany.com\">\n" +
+                "Send me mail at <a href=\"mailto:wharris1597@gmail.com\">\n" +
                 "\n" +
                 "wharris1597@gmail.com</a>.\n" +
                 "\n" + "<P> </B>" +
@@ -61,7 +66,20 @@ public class HelloWorldResource {
                 "</BODY>\n" +
                 "\n" +
                 "</HTML>";
-        return HTML;
+
+        String newHTML = "<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<h2>Learning HTML with External CSS</h2>\n" +
+                "<p class=\"blue\">This is a blue color paragraph</p>\n" +
+                "<p class=\"red\">This is a red color paragraph</p>\n" +
+                "<p class=\"green\">This is a green color paragraph</p>\n" +
+                "</body>\n" +
+                "</html>  ";
+        return newHTML;
 
     }
 

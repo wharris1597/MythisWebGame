@@ -3,7 +3,7 @@ package com.dropwizard.helloworld;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import com.dropwizard.helloworld.resources.HelloWorldResource;
+import com.dropwizard.helloworld.resource.HelloWorldResource;
 
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
