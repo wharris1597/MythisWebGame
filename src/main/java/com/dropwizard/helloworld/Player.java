@@ -4,7 +4,7 @@ import java.util.*;
 public class Player {
 	//variables
 	private static Player player;
-	private String location = "Athens";
+	private Locations location;
 	private Armor armor;
 	private Weapons weapon = Weapons.assignWeapon();
 	private Companions companion;
@@ -20,7 +20,7 @@ public class Player {
 			this.magicLvl = 25;
 		}
 
-		System.out.println(this);
+		//System.out.println(this);
 	}
 	//create singleton pattern to prevent multiple player isntances at a time
 	public static Player getPlayerInstance(){
@@ -41,12 +41,18 @@ public class Player {
 	//Travel method
 	//assign weapon
 
-	public void travel() {
-		System.out.println("You are currently located at: "+ location);
-		System.out.println("Would you like to travel? y or n");
-		//create new scanner object
-		Scanner scnr = new Scanner(System.in);
-		String answer = scnr.nextLine();
+	public void setLocation(String newLoc) {
+		switch(newLoc){
+			case "Athens": location = (Locations) Locations.getLocations().get(0); break;
+			case "Crete": location = (Locations) Locations.getLocations().get(1); break;
+			case "Underworld": location = (Locations) Locations.getLocations().get(2); break;
+			case "Hecate Temple": location = (Locations) Locations.getLocations().get(3); break;
+			case "Medusa's Cave": location = (Locations) Locations.getLocations().get(4); break;
+			case "Olympus": location = (Locations) Locations.getLocations().get(5); break;
+
+
+
+		}
 
 		
 		
@@ -66,7 +72,7 @@ public class Player {
 	public Armor getArmor(){
 		return player.armor;
 	}
-	public String getLocation() {
+	public Locations getLocation() {
 		return location;
 	}
 	public Weapons getWeapon() {

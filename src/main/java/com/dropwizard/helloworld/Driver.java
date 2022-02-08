@@ -9,7 +9,18 @@ public class Driver {
 		System.out.println("Hello!");
 		
 		//access new player instance
-		System.out.println(Locations.getLocations());
+		Locations newLocation = new Locations();
+		newLocation = (Locations) Locations.getLocations().get(1);
+
+
+
+		Player.getPlayerInstance().setLocation("Underworld");
+		System.out.println(Player.getPlayerInstance());
+
+
+
+
+
 
 
 
