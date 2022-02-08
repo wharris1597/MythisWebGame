@@ -5,27 +5,15 @@ public class Player {
 	//variables
 	private static Player player;
 	private String location = "Athens";
-	private Armor armor = Armor.assignArmor();
+	private Armor armor;
 	private Weapons weapon = Weapons.assignWeapon();
 	private Companions companion;
 	private int health = 100;
 	private int magicLvl = 0;
 
-
-	//create singleton pattern to prevent multiple player isntances at a time
-	public static Player getPlayerInstance(){
-		//search for instance of player, if not found, create one and return it
-		if(player == null){
-			System.out.println("Creating new Player");
-			player = new Player();
-		}
-		else {
-			System.out.println(player);
-		}
-		return player;
-	}
 	//default constructor for new player
 	private Player() {
+		this.armor = Armor.assignArmor();
 
 		//make player's magic level 25 if weapon is grimoire
 		if(Objects.equals(this.weapon.name, "Grimoire")){
@@ -34,6 +22,16 @@ public class Player {
 
 		System.out.println(this);
 	}
+	//create singleton pattern to prevent multiple player isntances at a time
+	public static Player getPlayerInstance(){
+		//search for instance of player, if not found, create one and return it
+		if(player == null){
+			System.out.println("Creating new Player");
+			player = new Player();
+		}
+		return player;
+	}
+
 	
 	//METHODS
 
@@ -49,12 +47,7 @@ public class Player {
 		//create new scanner object
 		Scanner scnr = new Scanner(System.in);
 		String answer = scnr.nextLine();
-		if (answer.equals("y")) {
-			System.out.println("Where would you like to travel?");
-			String destination = scnr.nextLine();
-			System.out.println("Traveling to "+ destination);
-			
-		}
+
 		
 		
 		
@@ -67,6 +60,29 @@ public class Player {
 		System.out.println("Magic Lvl: " + magicLvl);
 
 	}
+
+
+	//getter methods
+	public Armor getArmor(){
+		return player.armor;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public Weapons getWeapon() {
+		return weapon;
+	}
+	public Companions getCompanion() {
+		return companion;
+	}
+	public int getHealth() {
+		return health;
+	}
+	public int getMagicLvl() {
+		return magicLvl;
+	}
+
+
 
 
 	@Override

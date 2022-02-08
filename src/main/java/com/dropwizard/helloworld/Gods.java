@@ -8,6 +8,13 @@ public class Gods {
 	public Gods() {
 		
 	}
+
+
+	public void attackGod(){
+		Player player = Player.getPlayerInstance();
+		System.out.println(player.getArmor());
+
+	}
 	
 	
 
