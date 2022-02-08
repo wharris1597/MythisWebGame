@@ -34,14 +34,14 @@ public class HelloWorldResource {
                 "        <meta name=\"description\" content=\"\" />\n" +
                 "        <meta name=\"author\" content=\"\" />\n" +
                 "        <title>Grayscale - Start Bootstrap Theme</title>\n" +
-                "        <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\" />\n" +
+                "        <link rel=\"icon\" type=\"image/x-icon\" href=\"https://rawgithubusercontent.com/wharris1597/MythisWebGame/master/src/main/resources/assets/favicon.ico\" />\n" +
                 "        <!-- Font Awesome icons (free version)-->\n" +
                 "        <script src=\"https://use.fontawesome.com/releases/v5.15.4/js/all.js\" crossorigin=\"anonymous\"></script>\n" +
                 "        <!-- Google fonts-->\n" +
                 "        <link href=\"https://fonts.googleapis.com/css?family=Varela+Round\" rel=\"stylesheet\" />\n" +
                 "        <link href=\"https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i\" rel=\"stylesheet\" />\n" +
                 "        <!-- Core theme CSS (includes Bootstrap)-->\n" +
-                "        <link href=\"https://raw.githubusercontent.com/wharris1597/MythisWebGame/master/src/main/resources/style.css\" rel=\"stylesheet\" />\n" +
+                "        <link href=\"https://rawgithubusercontent.com/wharris1597/MythisWebGame/master/src/main/resources/css/styles.css\" rel=\"stylesheet\" />\n" +
                 "    </head>\n" +
                 "    <body id=\"page-top\">\n" +
                 "        <!-- Navigation-->\n" +
@@ -86,7 +86,7 @@ public class HelloWorldResource {
                 "                        </p>\n" +
                 "                    </div>\n" +
                 "                </div>\n" +
-                "                <img class=\"img-fluid\" src=\"assets/img/ipad.png\" alt=\"...\" />\n" +
+                "                <img class=\"img-fluid\" src=\"https://github.com/wharris1597/MythisWebGame/blob/master/src/main/resources/assets/img/ipad.png?raw=true\" alt=\"...\" />\n" +
                 "            </div>\n" +
                 "        </section>\n" +
                 "        <!-- Projects-->\n" +
@@ -94,7 +94,7 @@ public class HelloWorldResource {
                 "            <div class=\"container px-4 px-lg-5\">\n" +
                 "                <!-- Featured Project Row-->\n" +
                 "                <div class=\"row gx-0 mb-4 mb-lg-5 align-items-center\">\n" +
-                "                    <div class=\"col-xl-8 col-lg-7\"><img class=\"img-fluid mb-3 mb-lg-0\" src=\"assets/img/bg-masthead.jpg\" alt=\"...\" /></div>\n" +
+                "                    <div class=\"col-xl-8 col-lg-7\"><img class=\"img-fluid mb-3 mb-lg-0\" src=\"https://github.com/wharris1597/MythisWebGame/blob/master/src/main/resources/assets/img/bg-masthead.jpg?raw=true\" alt=\"...\" /></div>\n" +
                 "                    <div class=\"col-xl-4 col-lg-5\">\n" +
                 "                        <div class=\"featured-text text-center text-lg-left\">\n" +
                 "                            <h4>Shoreline</h4>\n" +
@@ -104,7 +104,7 @@ public class HelloWorldResource {
                 "                </div>\n" +
                 "                <!-- Project One Row-->\n" +
                 "                <div class=\"row gx-0 mb-5 mb-lg-0 justify-content-center\">\n" +
-                "                    <div class=\"col-lg-6\"><img class=\"img-fluid\" src=\"assets/img/demo-image-01.jpg\" alt=\"...\" /></div>\n" +
+                "                    <div class=\"col-lg-6\"><img class=\"img-fluid\" src=\"https://github.com/wharris1597/MythisWebGame/blob/master/src/main/resources/assets/img/demo-image-01.jpg?raw=true\" alt=\"...\" /></div>\n" +
                 "                    <div class=\"col-lg-6\">\n" +
                 "                        <div class=\"bg-black text-center h-100 project\">\n" +
                 "                            <div class=\"d-flex h-100\">\n" +
@@ -119,7 +119,7 @@ public class HelloWorldResource {
                 "                </div>\n" +
                 "                <!-- Project Two Row-->\n" +
                 "                <div class=\"row gx-0 justify-content-center\">\n" +
-                "                    <div class=\"col-lg-6\"><img class=\"img-fluid\" src=\"assets/img/demo-image-02.jpg\" alt=\"...\" /></div>\n" +
+                "                    <div class=\"col-lg-6\"><img class=\"img-fluid\" src=\"https://github.com/wharris1597/MythisWebGame/blob/master/src/main/resources/assets/img/demo-image-02.jpg?raw=true\" alt=\"...\" /></div>\n" +
                 "                    <div class=\"col-lg-6 order-lg-first\">\n" +
                 "                        <div class=\"bg-black text-center h-100 project\">\n" +
                 "                            <div class=\"d-flex h-100\">\n" +
@@ -225,7 +225,7 @@ public class HelloWorldResource {
                 "        <!-- Bootstrap core JS-->\n" +
                 "        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\"></script>\n" +
                 "        <!-- Core theme JS-->\n" +
-                "        <script src=\"js/scripts.js\"></script>\n" +
+                "        <script src=\"https://rawgithubusercontent.com/wharris1597/MythisWebGame/master/src/main/resources/js/scripts.js\"></script>\n" +
                 "        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->\n" +
                 "        <!-- * *                               SB Forms JS                               * *-->\n" +
                 "        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->\n" +
