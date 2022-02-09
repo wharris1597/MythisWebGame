@@ -21,7 +21,7 @@ public class DBConnect {
 		
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from Gods");
@@ -50,7 +50,7 @@ public class DBConnect {
 		
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from spells");
@@ -78,7 +78,7 @@ public class DBConnect {
 		List <Object> weapons = new ArrayList<>();
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from weapons");
@@ -108,7 +108,7 @@ public class DBConnect {
 		
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from armor");
@@ -137,7 +137,7 @@ public class DBConnect {
 		
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from companions");
@@ -167,7 +167,7 @@ public class DBConnect {
 		
 	try {
 		//Get connection to database
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://35.184.196.231:3306/newDatabase","root","eggroll94");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newDatabase","root","eggroll94");
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
 		ResultSet myRs = myStmt.executeQuery("select * from locations");

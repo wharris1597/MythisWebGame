@@ -14,7 +14,7 @@ public class Driver {
 
 
 
-		Player.getPlayerInstance().setLocation("Underworld");
+		Player.getPlayerInstance().setLocation("Olympus");
 		System.out.println(Player.getPlayerInstance());
 
 

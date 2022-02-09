@@ -335,7 +335,7 @@ public class HelloWorldResource {
                 "</BODY>\n" +
                 "\n" +
                 "</HTML>";
-        return bootstrapHTML;
+        return newHTML2;
 
     }
 
