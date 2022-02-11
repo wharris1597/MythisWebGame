@@ -10,7 +10,7 @@ public class Locations {
 		this.name = "";
 		this.id = 100;
 	}
-
+//get list of locations
 	public static List<Object> getLocations(){
 		return (List<Object>) PopulateLists.getList("locations");
 	}

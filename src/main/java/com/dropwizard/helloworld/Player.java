@@ -14,11 +14,14 @@ public class Player {
 	//default constructor for new player
 	private Player() {
 		this.armor = Armor.assignArmor();
+		setLocation("Athens");
 
 		//make player's magic level 25 if weapon is grimoire
 		if(Objects.equals(this.weapon.name, "Grimoire")){
 			this.magicLvl = 25;
+
 		}
+
 
 		//System.out.println(this);
 	}
@@ -28,6 +31,16 @@ public class Player {
 		if(player == null){
 			System.out.println("Creating new Player");
 			player = new Player();
+		}
+
+		//if health falls to 0 or below, display game over
+		//FIXME delete player instance? reset?
+		if(player.health<=0){
+			System.out.println("You have died. You are dead...that means game over");
+			System.out.println("Here are your final Stats:");
+			System.out.println("");
+
+
 		}
 		return player;
 	}
@@ -41,6 +54,7 @@ public class Player {
 	//Travel method
 	//assign weapon
 
+	//setter for Location
 	public void setLocation(String newLoc) {
 		switch(newLoc){
 			case "Athens": location = (Locations) Locations.getLocations().get(0); break;
@@ -49,22 +63,14 @@ public class Player {
 			case "Hecate Temple": location = (Locations) Locations.getLocations().get(3); break;
 			case "Medusa's Cave": location = (Locations) Locations.getLocations().get(4); break;
 			case "Olympus": location = (Locations) Locations.getLocations().get(5); break;
-
-
-
 		}
-
-		
-		
-		
-		
 	}
+
 	//List Stats
 	public void listStats() {
 		System.out.println("Here are your Stats:");
 		System.out.println("Health: " + health);
 		System.out.println("Magic Lvl: " + magicLvl);
-
 	}
 
 
@@ -88,13 +94,15 @@ public class Player {
 		return magicLvl;
 	}
 
+	public void battle(Gods god){
+		player.health = player.health - god.damage;
 
+	}
 
 
 	@Override
 	public String toString() {
-		return "Player Info:" +
-				"\nlocation='" + location + '\'' +
+		return "Player Info:" + location +
 				"\n" + armor +
 				"\n" + weapon +
 				"\ncompanion=" + companion +

@@ -32,6 +32,7 @@ public class DBConnect {
 			//add god's details from result set
 			god.name = myRs.getString("godName");
 			god.description = myRs.getString("godDescription");
+			god.damage = myRs.getInt(("Damage"));
 			//add god to list
 			gods.add(god);
 			

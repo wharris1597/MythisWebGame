@@ -1,6 +1,7 @@
 package com.dropwizard.helloworld;
 
 import java.sql.SQLException;
+import java.util.Random;
 
 public class Driver {
 
@@ -14,8 +15,12 @@ public class Driver {
 
 
 
-		Player.getPlayerInstance().setLocation("Olympus");
-		System.out.println(Player.getPlayerInstance());
+		Player.getPlayerInstance().battle((Gods) Gods.getGods().get(0));
+
+		System.out.print(Player.getPlayerInstance());
+
+
+
 
 
 
